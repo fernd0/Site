@@ -1,133 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro');
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-html
+/* Global */
+html 
 {
-    min-height: 100%;
-    overflow: hidden;
+      min-height: 100%;
+      overflow: hidden;
 }
 
-body
+body 
 {
-    height: calc(100vh -  8em);
-    padding: 4em;
-    color: rgba(255, 255, 255, 0.74);
-    font-family: 'Anonymous Pro', monospace;
-    background-color: rgb(25, 25, 25);
+      height: calc(100vh - 8em);
+      margin: 0;
+      padding: 0;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: 'Anonymous Pro', monospace;
+      background-color: rgb(25, 25, 25);
 }
 
-.line
+.line 
 {
-    position: relative;
-    top: 50%;
-    width: 26em; 
-    margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 3vw;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;transform: translateY(-50%);
+      position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 3vw;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
 }
 
-.line2
+/*Animation*/
+
+.anim-typewriter 
 {
-    position: relative;
-    top: 50%;
-    width: 26em; 
-    margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 3vw;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;transform: translateY(-50%);
+      animation: typewriter 3s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
 }
 
-
-.anim-typewriter
+@keyframes typewriter 
 {
-    animation: typewriter 1s steps(20) 1s 1 normal both,
-    blinkTextCursor 500ms steps(20) infinite normal;
-}
-.anim-typewriter2
-{
-    animation: typewriter2 3s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
-}
-
-.social
-{
-    font-size: 105%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      from 
+      {
+            width: 0;
+      }
+      to 
+      {
+            width: 28em;
+      }
 }
 
-.social>a
+@keyframes blinkTextCursor 
 {
-    vertical-align: middle;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 10px;
-    margin: 0 10px;
-    font-size: 20pt;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
-    transition: 0.2s;
-}
-
-.social>a>i
-{
-    vertical-align: middle;
-    display: inline-block;
-    transition: 0.8s;
-}
-
-.social>a:hover
-{
-    transform: scale(1,1);
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-}
-
-.social>a:hover > i
-{
-    transform: rotate(15deg) scale(1.2);
-}
-
-
-@keyframes typewriter
-{
-    from {
-        width: 0;
-    }
-    to {
-        width: 7em;
-    }
-}
-
-@keyframes typewriter2
-{
-    from {
-        width: 0;
-    }
-    to {
-        width: 20em;
-    }
-}
-
-@keyframes blinkTextCursor
-{
-    from {
-        border-right-color: rgba(255, 255, 255, 0.75);
-    }
-    to {
-        border-right-color: transparent;;
-    }
+      from 
+      {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to 
+      {
+            border-right-color: transparent;
+      }
 }
