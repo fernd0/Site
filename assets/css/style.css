@@ -55,7 +55,7 @@ body
 
 .social
 {
-    font-size: 110%;
+    font-size: 105%;
     position: absolute;
     width: 600px;
     text-align: center;
@@ -66,13 +66,14 @@ body
 
 .social>a
 {
-    display: inline-flex;
+    vertical-align: middle;
+    display: inline-block;
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    padding: 15px 15px;
-    margin: 0 15px;
-    font-size: 25pt;
+    padding: 10px 10px;
+    margin: 0 10px;
+    font-size: 20pt;
     justify-content: center;
     width: 40px;
     height: 40px;
@@ -82,6 +83,8 @@ body
 
 .social>a>i
 {
+    vertical-align: middle;
+    display: inline-block;
     transition: 0.8s;
 }
 
