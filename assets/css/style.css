@@ -9,8 +9,7 @@ html
 body
 {
     height: calc(100vh -  8em);
-    margin: 0;
-    padding: 0;
+    padding: 4em;
     color: rgba(255, 255, 255, 0.74);
     font-family: 'Anonymous Pro', monospace;
     background-color: rgb(25, 25, 25);
