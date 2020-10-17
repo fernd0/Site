@@ -22,15 +22,34 @@ body
     width: 26em; 
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 180%;
+    font-size: 3vw;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
 }
 
+.line2
+{
+    position: relative;
+    top: 50%;
+    width: 26em; 
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 3vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+
+
 .anim-typewriter
 {
-    animation: typewriter 4s steps(40) 1s 1 normal both,
+    animation: typewriter 1s steps(20) 1s 1 normal both,
+    blinkTextCursor 500ms steps(20) infinite normal;
+}
+.anim-typewriter2
+{
+    animation: typewriter2 3s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
 }
 
@@ -79,13 +98,24 @@ body
     transform: rotate(15deg) scale(1.2);
 }
 
+
 @keyframes typewriter
 {
     from {
         width: 0;
     }
     to {
-        width: 29em;
+        width: 7em;
+    }
+}
+
+@keyframes typewriter2
+{
+    from {
+        width: 0;
+    }
+    to {
+        width: 20em;
     }
 }
 
