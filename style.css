@@ -37,3 +37,10 @@ a {
 * {
       box-sizing: border-box;
 }
+
+@supports (-ms-ime-align:auto) {
+    .titulo{
+            line-height: 2.5;
+         }
+}
+
