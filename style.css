@@ -1,5 +1,4 @@
 .principal{
-    line-height: 2.5;
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
@@ -38,19 +37,3 @@ a {
 * {
       box-sizing: border-box;
 }
-
- @supports (-moz-appearance:none) {
-    .principal { line-height: 0; } 
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    .principal { line-height: 0; }
-}
-
-@media screen and(-webkit-min-device-pixel-ratio:0) {
-  .principal { -chrome-:only (; 
-     line-height: 0;
-  );} 
-}
-
