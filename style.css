@@ -39,8 +39,7 @@ a {
 }
 
 @supports (-ms-ime-align:auto) {
-    .principal{
-            line-height: 2.5;
-         }
+    .titulo {
+        line-height: 2.5;
+    }
 }
-
