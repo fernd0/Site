@@ -13,12 +13,16 @@ h1{
     background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    animation: animate__fadeIn;
+    animation-duration: 1s;
 }
 
 h2 {
     background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    animation: animate__fadeIn;
+    animation-duration: 1s;
 }
 
 html, body {
