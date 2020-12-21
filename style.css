@@ -13,8 +13,6 @@ h1{
     background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: animate__fadeIn;
-    animation-duration: 2s;
 }
 
 h2 {
