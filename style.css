@@ -9,7 +9,6 @@
 .titulo{
     margin: 0;
     font-size: 4rem;
-    line-height: 0.3;
     text-align: center;
     background: linear-gradient(to right, #ff00cc, #333399);
     -webkit-text-fill-color: transparent;
