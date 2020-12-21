@@ -11,17 +11,11 @@
     line-height: 0.6;
     font-size: 4rem;
     text-align: center;
-}
-.titulo a {
-    color: #0070f3;
-    text-decoration: none;
+    background: linear-gradient(to right, #ff00cc, #333399);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.titulo a:hover,
-.titulo a:focus,
-.titulo a:active {
-    text-decoration: underline;
-}
 
 html, body {
     padding: 0;
