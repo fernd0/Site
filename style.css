@@ -1,4 +1,6 @@
 .principal{
+    border: 1px solid black;
+    margin: 10px;
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
