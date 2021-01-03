@@ -7,18 +7,18 @@
     align-items: center;
 }
 h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Amiko', sans-serif;
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    color: #182848;
+    color: #203A43;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
-    color: #182848;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: #203A43;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
