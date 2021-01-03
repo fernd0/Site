@@ -10,13 +10,13 @@ h1{
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    font-color: #312c51;
+    color: #312c51;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
 
 h2 {
-    font-color: #312c51;
+    color: #312c51;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
