@@ -7,21 +7,18 @@
     align-items: center;
 }
 h1{
-    background: linear-gradient(to right, #4b6cb7, #182848);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     font-family: 'Lato', sans-serif;
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    color: #f0c38e;
+    color: #182848;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
-    color: #f0c38e;
+    color: #182848;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
