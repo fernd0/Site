@@ -11,14 +11,14 @@ h1{
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    color: #8360c3;
+    color: #26775b;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
 
 h2 {
     font-family: 'Mukta Vaani', sans-serif;
-    color: #8360c3;
+    color: #26775b;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
