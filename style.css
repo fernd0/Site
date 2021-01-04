@@ -7,6 +7,7 @@
     align-items: center;
 }
 h1{
+    text-shadow:1px 1px 1px rgba(0,0,0,0.005);
     font-family: 'Amiko', sans-serif;
     margin: 0;
     font-size: 5rem;
@@ -17,6 +18,7 @@ h1{
 }
 
 h2 {
+    text-shadow:1px 1px 1px rgba(0,0,0,0.005);
     font-family: 'Mukta Vaani', sans-serif;
     color: #26775b;
     animation: animate__fadeIn;
