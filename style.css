@@ -7,20 +7,24 @@
     align-items: center;
 }
 h1{
-    text-shadow:1px 1px 1px rgba(0,0,0,0.005);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
     font-family: 'Amiko', sans-serif;
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    color: #26775b;
+    color: #369171;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
 
 h2 {
-    text-shadow:1px 1px 1px rgba(0,0,0,0.005);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
     font-family: 'Mukta Vaani', sans-serif;
-    color: #26775b;
+    color: #369171;
     animation: animate__fadeIn;
     animation-duration: 1s;
 }
