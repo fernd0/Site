@@ -1,16 +1,610 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queima de 3 Semanas.</title>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KW24C9T');</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Queima de 3 Semanas</title>
+<link rel="shortcut icon" href="../files/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+<style>
+    header {
+      background: url("../files/headerbg2.png");
+      background-repeat: no-repeat;
+    }
+    h1 {
+      font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+      text-transform: uppercase bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+    .comments {
+      background-color: #F6F7F9;
+    }
+    .comment {
+      display: block; 
+      padding: 10px 0; 
+      line-height: 20px;
+    }
+    .span {
+      color: #365899; 
+      font-weight: bold;
+    }
+    .answer {
+      color: #444; 
+      -webkit-font-smoothing: antialiased;
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      padding-top: 10px; 
+      line-height: 20px;
+      padding-left: 9px; 
+      border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+    }
+    .classeNova {
+      color: #444; 
+      -webkit-font-smoothing: antialiased; 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      font-family: Arial; 
+      background-color:
+      #F6F7F9;
+      font-size: 14px; 
+      padding-top: 20px;"      
+    }
+    .paragrafo {
+      color: #444; 
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      line-height: 1.5em; 
+      margin: 0;
+      margin-left: 60px; 
+      margin-bottom: 0px;
+    }
+    .like {
+      font-size: 11px; color: #90949c;
+    }
+    .twenty1 {
+      font-weight: 700; 
+      border-bottom: 1px solid #E9EBEE; 
+      display: block; 
+      padding-bottom: 6px;
+    }
+    .imgComment {
+      width: 60px; 
+      height: 50px; 
+      float: left; 
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+    .pirataria b{
+      color: #FFC400;
+    }
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <script type="text/javascript">
 
-        var url = "https://go.hotmart.com/S46027516M?ap=3980";
-        window.location = url;
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW24C9T"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    </script>
+<header class="py-3">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center">
+<img src="../files/ultrasecreto4.png" class="img-fluid my-3">
+<h1>3 SEGREDOS PARA PERDER MUITO PESO EM <font color="red">21 DIAS</font></h1>
+<div class="embed-responsive embed-responsive-16by9 mb-4">
+<iframe src="https://player.vimeo.com/video/493970993?autoplay=1&loop=1&autopause=0" allowfullscreen></iframe>
+</div>
+<div id="btn" class="mt-3 hide">
+<a href="https://pay.hotmart.com/B45507285Y?off=9iynxga1&checkoutMode=10" class="a-btn" style="text-decoration: none;">
+<span class="span-btn">QUERO FAZER O PROGRAMA!</span>
+<span class="span-btn2">(atenção: vagas limitadas)</span>
+</a>
+<div class="cards mt-3">
+<img class="img-fluid" src="../files/cards/AMEX.svg"></img>
+<img class="img-fluid" src="../files/cards/BILLET.svg"></img>
+<img class="img-fluid" src="../files/cards/DINERS.svg"></img>
+<img class="img-fluid" src="../files/cards/ELO.svg"></img>
+<img class="img-fluid" src="../files/cards/HIPERCARD.svg"></img>
+<img class="img-fluid" src="../files/cards/MASTER_CARD.svg"></img>
+<img class="img-fluid" src="../files/cards/PAYPAL.svg"></img>
+<img class="img-fluid" src="../files/cards/VISA.svg"></img>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="comments">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="classeNova">
+<span class="twenty1">
+21 comentários
+</span>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/vitor.jpg" class="imgComment">
+Vitor
+disse</span>
+<p class="paragrafo">
+Feliz demais!! Obrigado Hugo, achava que o Guia n ia funcionar pq já tinha feito de td pra perder peso, mas msmo assim quis tentar e olha agora parece que sou outra pessoa.. muito obrigado!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/raquel.jpg" class="imgComment">Raquel
+disse</span>
+<p class="paragrafo">
+Gente... não tô acreditando, no segundo dia já perdi 2 kilos. sério foi o melhor investimento q fiz em 2020..</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/3.jpg" class="imgComment">Rafaela
+disse</span>
+<p class="paragrafo">
+Não sei se entro ou não no programa kkkk estou mto indecisa!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/16.jpg" class="imgComment">Gabriela
+disse</span>
+<p class="paragrafo">
+Mds eu também, alguém pode me ajudar?</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/1.jpg" class="imgComment">Jennifer
+disse</span>
+<p class="paragrafo">
+Eii amigas, super recomendo.. perdi 5 kilos em 2 semanas</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/16.jpg" class="imgComment">Gabriela
+disse</span>
+ <p class="paragrafo">
+Parabéns pelo resultado Jenifer.... pensei bem e tenho absoluta certeza que vai valer a pena!!! Obrigada</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/3.jpg" class="imgComment">Rafaela
+disse</span>
+<p class="paragrafo">
+Jennifer, pode me passar mais informações? Estou quase comprando haha</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/1.jpg" class="imgComment">Jennifer
+disse</span>
+<p class="paragrafo">
+Claroo Rafa, te chamei no privado..</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/juliano.jpg" class="imgComment">Juliano
+disse</span>
+<p class="paragrafo">
+Tô surpreso com esse programa! N sabia que realmente ia funcionar, tô naqueles 7 dias que vc flou e adivinha....
+já perdi 2 quilos, vou recomendar para todos os meus amigos</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/luisa.jpg" class="imgComment">Luisa
+disse</span>
+<p class="paragrafo">
+Eu realmente precisava desse programa, achei o botão pra ficar em forma 😀 eu e meu marido estamos adorando. obrigada Hugo!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/everton.jpg" class="imgComment">Everton
+disse</span>
+<p class="paragrafo">
+Hugo você devia vender esse guia por um milhããão ele funciona mesmo! Eu já tinha feito tudo que podia
+e já tinha até achado que eu nunca iria conseguir.. graças a vc hj tenho o corpo q sempre sonhei, valeu mesmo!!!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/13.jpg" class="imgComment">Carla
+disse</span>
+<p class="paragrafo">
+Gente, será que esse chá funciona mesmo?
+</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/19.jpg" class="imgComment">
+Fernanda
+disse</span>
+<p class="paragrafo">
+Funciona sim.. no meu caso eu perdi 3 kilos nos 10 primeiros dias...</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/13.jpg" class="imgComment">Carla
+disse</span>
+<p class="paragrafo">
+Obrigada!!! Vou tentar, parabéns!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+ <img src="../files/profiles/claudia-silva.jpg" class="imgComment">Claudia
+Silva disse</span>
+<p class="paragrafo">
+Minha vida mudou do dia pra noite!!! Obrigada pelo guia Hugo… Deus te abençoe.</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/8.jpg" class="imgComment">Heloísa
+disse</span>
+<p class="paragrafo">
+Funciona mesmo amiga??</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/claudia-silva.jpg" class="imgComment">
+Claudia
+Silva
+disse</span>
+<p class="paragrafo">
+Com certeza linda, mudou totalmente minha vida..</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/kaua.jpg" class="imgComment">
+Kauã
+disse</span>
+<p class="paragrafo">
+Sou personal trainer e ensinei tudo q aprendi pros meus alunos... eles melhoraram mto a performance em apenas algumas semanas, recomendo para todos!!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/ana-julia.jpg" class="imgComment">Ana
+Julia disse</span>
+<p class="paragrafo">
+Tentei de tudo nos últimos 6 meses para perder peso, será q funciona??</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/marcela.jpg" class="imgComment">Marcela
+disse</span>
+<p class="paragrafo">
+Ana eu ja tava assim ano passado sem saber oq fazer.. ai usei esse programa q mudou minha vida e agr sou outra pessoa! Espero q vc consiga tb..!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/jeferson.jpg" class="imgComment">Jeferson
+disse</span>
+<p class="paragrafo">
+Eu tava igual a mulher do video.. fui obeso durante ano, graças a ele consegui ter minha vida de volta.... recomendo e Muito!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>s
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/ana-julia.jpg" class="imgComment">Ana
+Julia disse</span>
+<p class="paragrafo">
+Obgda gente, vou tentar 🙂</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/adalberto.jpg" class="imgComment">Adalberto
+disse</span>
+<p class="paragrafo">
+Alguém aí já testou? Pode me dizer se deu certo?</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+ <img src="../files/profiles/7.jpg" class="imgComment">
+Fernanda
+disse</span>
+<p class="paragrafo">
+Eu já testei sim Adalberto, posso dizer que com certeza foi a melhor coisa que fiz...</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/adalberto.jpg" class="imgComment">Adalberto
+disse</span>
+<p class="paragrafo">
+Interessante, vou terminar de assistir o vídeo e comprar!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/jessica.jpg" class="imgComment">Jessica
+disse</span>
+<p class="paragrafo">
+Gente eu tenho medo de gastar dinheiro e não dar certo 🙁</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/joao.jpg" class="imgComment">João
+disse</span>
+<p class="paragrafo">
+Eu pensava a mesma coisa, mas compraria 10 vezes depois que vi que funciona 🙂 Bora conquistar o corpão! A gente merece depois que luta tanto</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/bruna.jpg" class="imgComment">Bruna
+disse</span>
+<p class="paragrafo">
+Funciona sim flor! Pode acreditar. Já tinha tentado de tudo, esse programa foi a melhor coisa que já me aconteceu</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/claudia.jpg" class="imgComment">Claudia
+disse</span>
+<p class="paragrafo">
+Gente eu achava que era mentira, mas tudo dando certo…. eu me sentia muito pra baixo, nunca podia usar as roupas que queria... Cheguei ao ponto de ir numa consulta e o médico disse que tinha que parar de comer e fazer dietas... Por anos eu fiquei sem comer besteiras, e fazendo dietas mirabolantes, e não adiantou nada aff Com esse guia, consegui o impossível! Eu não to acreditando.</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/rafael.jpg" class="imgComment">Rafael
+disse</span>
+<p class="paragrafo">
+Hugo vc ta vendendo muito barato! @leo_andrade esse aqui que te falei que funcionou pra mim. Pode comprar!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/aline.jpg" class="imgComment">Aline
+disse</span>
+<p class="paragrafo">
+Acabei de me pesar!!!! Ahhhh não acredito ta funcionando!!! Já perdi 3 quilos 🙈</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="../files/profiles/stefany.jpg" class="imgComment">Alessandra
+disse</span>
+<p class="paragrafo">
+Comprei o guia e está funcionando perfeitamente!!! Obrigada Hugo e Jéssica pela oportunidade!!
+</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/vitoria.jpg" class="imgComment">
+Vitória
+disse</span>
+<p class="paragrafo">
+Funciona msmo?</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="../files/profiles/stefany.jpg" class="imgComment">Alessandra
+disse</span>
+<p class="paragrafo">
+Eu fiz td q ele ensina desde que comprei e foi direitinho que nem ele fala no guia...</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+</div>
+<div class="mt-3 mb-4 text-center hide" id="btn2">
+<a href="https://pay.hotmart.com/B45507285Y?off=9iynxga1&checkoutMode=10" class="a-btn" style="text-decoration: none;">
+<span class="span-btn">QUERO FAZER O PROGRAMA!</span>
+<span class="span-btn2">(atenção: vagas limitadas)</span>
+</a>
+<div class="cards mt-3">
+<img class="img-fluid" src="../files/cards/AMEX.svg"></img>
+<img class="img-fluid" src="../files/cards/BILLET.svg"></img>
+<img class="img-fluid" src="../files/cards/DINERS.svg"></img>
+<img class="img-fluid" src="../files/cards/ELO.svg"></img>
+<img class="img-fluid" src="../files/cards/HIPERCARD.svg"></img>
+<img class="img-fluid" src="../files/cards/MASTER_CARD.svg"></img>
+<img class="img-fluid" src="../files/cards/PAYPAL.svg"></img>
+<img class="img-fluid" src="../files/cards/VISA.svg"></img>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6 pirataria">
+<h3> Pirataria é <b>CRIME</b></h3>
+A venda do Queima de 3 Semanas só pode ser realizada através deste site. Qualquer outro site onde você encontre este programa é uma
+FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados.
+NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia
+comportamental. Não nos responsabilizamos por compras realizadas em outros sites.
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="row cpy">
+<div class="col text-center">
+Copyright 2020 - Queima de 3 Semanas ®<br>
+Todos os direitos reservados.
+</div>
+</div>
+<div class="row links">
+<div class="col text-center">
+<a href=".../termos-de-uso.html" target="_blank">Termos de Uso</a>
+<a href=".../politica-de-privacidade.html" target="_blank">Políticas de Privacidade</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-md-12 text-center" style="font-size: 11px; padding: 40px 0px 20px 0px; color: #b7adad;">
+<b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do
+Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar
+claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu
+e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver
+alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial
+de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.
+</div>
+</div>
+</div>
+</footer>
+<script>
+    function showBtn () {
+      document.getElementById("btn").classList.remove("hide")
+    }
+    setTimeout(showBtn, 1410000)
+    function showBtn2 () {
+      document.getElementById("btn2").classList.remove("hide")
+    }
+    setTimeout(showBtn2, 600000)
+  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
