@@ -87,3 +87,9 @@ footer{
     margin-bottom: 2em;
 }
 
+@media screen and (min-width: 600px){
+    .footer-left{
+        flex: 1 0px;
+    }
+}
+
