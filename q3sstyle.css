@@ -69,31 +69,3 @@ h2{
     text-align: center;
     color: #fff;
 }
-footer{
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 35px;
-    color: #fff;
-    background-color: #0c2840;
-}
-
-.footer > *{
-    flex: 1 100%;
-}
-
-.footer-left{
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-}
-
-@media screen and (min-width: 600px){
-    .footer-left{
-        flex: 1 0px;
-    }
-}
-@media (max-width:600px){
-    .footer{
-        padding: 15px;
-    }
-}
