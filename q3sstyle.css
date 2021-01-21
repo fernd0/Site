@@ -69,4 +69,21 @@ h2{
     text-align: center;
     color: #fff;
 }
+footer{
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #0c2840;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
 
