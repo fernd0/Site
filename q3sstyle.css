@@ -92,4 +92,8 @@ footer{
         flex: 1 0px;
     }
 }
-
+@media (max-width:600px){
+    .footer{
+        padding: 15px;
+    }
+}
