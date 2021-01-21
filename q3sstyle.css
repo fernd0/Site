@@ -73,7 +73,7 @@ footer{
     display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding: 35px;
     color: #fff;
     background-color: #0c2840;
 }
