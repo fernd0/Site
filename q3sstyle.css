@@ -9,6 +9,8 @@
 
 body
 {
+    position: relative;
+    padding-bottom: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,4 +70,13 @@ h2{
     padding: 13px;
     text-align: center;
     color: #fff;
+}
+footer{
+    text-align: center;
+    background-color: #1d252c;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
