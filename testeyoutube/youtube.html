@@ -76,15 +76,16 @@
             jQuery(".cov").show();
             player.pauseVideo();
             unmutevid();
-            player.seekTo(0, true);
+            player.seekTo(0);
         }
 
         function onPlayerReady() {
             mutevid();
             if (nw) {
-                player.seekTo(0, true);
+                player.seekTo(0,);
                 nw = false;
             }
+            player.playVideo();
         }
 
         function onPlayerError(e) {
@@ -101,7 +102,7 @@
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
-                            resetvid();
+                            resetvid;
                         }
                     }, 3500);
                 }
