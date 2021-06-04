@@ -6,4 +6,16 @@
     top: 0;
     width: 100%;
     left: 0;
-} 
+}
+.thrv_wrapper{
+    box-sizing: content-box;
+    margin-bottom: 20px;
+    padding: 1px
+}
+[data-css="tve-u-1726b5a2aa7"] {
+    float: none;
+    max-width: 1082px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 5px !important;
+}
