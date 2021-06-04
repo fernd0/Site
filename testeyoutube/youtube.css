@@ -4326,6 +4326,7 @@ a:hover {
   display: none;
 }
 .cov {
+  opacity: 70%;
   background-image: url(video-cover.png);
   background-size: cover;
   z-index: 20 !important;
