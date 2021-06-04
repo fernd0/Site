@@ -1225,16 +1225,6 @@ p {
 }
 
 /*** uncss> filename: http://2020-08-14-vsl/css/default.min.css ***/
-@charset "UTF-8";
-@font-face {
-  font-family: flowplayer;
-  src: url(../modules/blog/video/flowplayer/skin/icons/flowplayer.eot?#iefix)
-      format("embedded-opentype"),
-    url(../modules/blog/video/flowplayer/skin/icons/flowplayer.woff2)
-      format("woff2"),
-    url(../modules/blog/video/flowplayer/skin/icons/flowplayer.woff)
-      format("woff");
-} /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 :-webkit-full-screen-ancestor {
   -webkit-animation: none !important;
   animation: none !important;
