@@ -85,7 +85,6 @@
                 player.seekTo(0,);
                 nw = false;
             }
-            player.playVideo();
         }
 
         function onPlayerError(e) {
@@ -108,7 +107,6 @@
                 }
             }
             if (e.data === 1) {
-                resetvid();
                 jQuery("#loadingVideo").hide();
                 jQuery(".cov").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
