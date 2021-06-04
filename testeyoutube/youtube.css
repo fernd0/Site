@@ -4360,7 +4360,7 @@ a:hover {
 
 @media only screen and (max-width: 480px) {
   #cfs {
-    background-image: url(../img/click-sound-m2.gif);
+    background-image: url(click-sound-m2.gif);
   }
 }
 
