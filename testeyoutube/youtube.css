@@ -1,0 +1,9 @@
+#cov{
+    background-size: cover;
+    z-index: 20 !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
