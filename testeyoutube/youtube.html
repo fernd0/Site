@@ -58,6 +58,79 @@
             });
         }
 
+        function mutevid() {
+            player.mute();
+            player.setVolume(0);
+            muteStatus = 1;
+        }
+
+        function unmutevid() {
+            player.unMute();
+            player.setVolume(100);
+            muteStatus = 0;
+        }
+
+        function resetvid() {
+            jQuery("#loadingVideo").hide();
+            jQuery(".cov").show();
+            player.pauseVideo();
+            unmutevid();
+            player.seekTo(0);
+        }
+
+        function onPlayerReady() {
+            mutevid();
+            if (nw) {
+                player.seekTo(0);
+                nw = false;
+            }
+            player.playVideo();
+        }
+
+        function onPlayerError(e) {
+            player.stopVideo();
+            jQuery(".cov").css("background-image", "url('video-cover.png')");
+            jQuery(".cov").show();
+            jQuery("#loadingVideo").hide();
+            jQuery("#cfs").hide();
+        }
+
+        function onPlayerStateChange(e) {
+            if (e.data === -1) {
+                c++;
+                if (c > 1) {
+                    setTimeout(function () {
+                        if (player.getPlayerState() === -1) {
+                            resetvid();
+                        }
+                    }, 3500);
+                }
+            }
+            if (e.data === 1) {
+                jQuery("#loadingVideo").hide();
+                jQuery(".cov").hide();
+                jQuery(".cov").css("background-image", "url('video-cover.png')");
+                if (muteStatus == 1) {
+                    jQuery("#cfs").show();
+                } else {
+                    jQuery("#cfs").hide();
+                    unmutevid();
+                }
+            }
+            if (e.data === 2) {
+                jQuery("#loadingVideo").hide();
+                jQuery("#cfs").hide();
+                jQuery(".cov").show();
+                unmutevid();
+            }
+            if (e.data === 3) {}
+            if (e.data === 0 || e.data === 5) {
+                jQuery("#loadingVideo").hide();
+                jQuery("#cfs").hide();
+                jQuery(".cov").css("background-image", "url('video-cover.png')");
+                jQuery(".cov").show();
+            }
+        }
         jQuery(".cov").click(function () {
             player.playVideo();
             jQuery(".cov").hide();
