@@ -74,9 +74,8 @@
             player.seekTo(0);
         }
 
-        function onPlayerReady() {
-            mutevid();
-            player.playVideo();
+        function onPlayerReady(event) {
+            event.player.playVideo();
         }
 
         function onPlayerError(event) {
