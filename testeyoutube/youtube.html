@@ -76,7 +76,7 @@
 
         function onPlayerReady(event) {
             jQuery(".cov").hide();
-            event.player.playVideo();
+            player.playVideo();
         }
 
         function onPlayerError(event) {
@@ -112,7 +112,6 @@
             if (event.data === 2) {
                 jQuery("#loadingVideo").hide();
                 jQuery("#cfs").hide();
-                jQuery(".cov").css("background-image", "url('video-cover.png')");
                 jQuery(".cov").show();
                 unmutevid();
             }
