@@ -93,8 +93,7 @@
         }
 
         function onPlayerStateChange(e) {
-            if (e.data === YT.PlayerState.PLAYING) {
-                c++;
+            if (e.data === -1) {
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
