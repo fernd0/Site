@@ -28,7 +28,6 @@
     <script type="text/javascript">
         var muteStatus;
         var c = 0;
-        var nw = true;
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -77,10 +76,6 @@
 
         function onPlayerReady() {
             mutevid();
-            if (nw) {
-                player.seekTo(0);
-                nw = false;
-            }
             player.playVideo();
         }
 
