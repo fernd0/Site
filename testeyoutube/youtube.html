@@ -75,7 +75,8 @@
         }
 
         function onPlayerReady(event) {
-            mutevid();
+            jQuery(".cov").css("background-image", "url('video-cover.png')");
+            jQuery("#loadingVideo").hide();
             event.player.playVideo();
         }
 
