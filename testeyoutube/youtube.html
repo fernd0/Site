@@ -55,7 +55,6 @@
         }
 
         function mutevid() {
-            cov.hide();
             player.mute();
             player.setVolume(0);
             muteStatus = 1;
@@ -90,6 +89,7 @@
 
         function onPlayerStateChange(event) {
             if (event.data === -1) {
+                c++;
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
