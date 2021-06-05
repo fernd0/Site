@@ -75,8 +75,8 @@
         }
 
         function onPlayerReady(event) {
-            jQuery("#loadingVideo").hide();
-            player.playVideo();
+            mutevid();
+            event.player.playVideo();
         }
 
         function onPlayerError(event) {
@@ -89,12 +89,9 @@
 
         function onPlayerStateChange(event) {
             if (event.data === -1) {
-                jQuery("#loadingVideo").hide();
-                c++;
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
-                            jQuery("#loadingVideo").hide();
                             resetvid();
                         }
                     }, 3500);
