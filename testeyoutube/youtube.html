@@ -39,12 +39,15 @@
                 videoId: "Q2PVO9KSSZ4",
                 playerVars: {
                     'autoplay': 0,
+                    'cc_load_policy': 0,
                     'controls': 0,
-                    'rel': 0,
-                    'modestbranding': 1,
-                    'showinfo': 0,
-                    'wmode': 'transparent',
+                    'disablekb': 1,
+                    'fs': 0,
                     'playsinline': 1,
+                    'modestbranding': 1,
+                    'iv_load_policy': 3,
+                    'rel': 0,
+                    'showinfo': 0,
                 },
                 events: {
                     'onReady': onPlayerReady,
@@ -74,13 +77,12 @@
             player.seekTo(0);
         }
 
-        function onPlayerReady(event) {
-            jQuery("#loadingVideo").hide();
-            jQuery(".cov").hide();
+        function onPlayerReady() {
+            player.seekTo(0);
             player.playVideo();
         }
 
-        function onPlayerError(event) {
+        function onPlayerError(e) {
             player.stopVideo();
             jQuery(".cov").css("background-image", "url('video-cover.png')");
             jQuery(".cov").show();
@@ -88,8 +90,9 @@
             jQuery("#cfs").hide();
         }
 
-        function onPlayerStateChange(event) {
-            if (event.data === -1) {
+        function onPlayerStateChange(e) {
+            if (e.data === -1) {
+                c++;
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
@@ -98,7 +101,7 @@
                     }, 3500);
                 }
             }
-            if (event.data === 1) {
+            if (e.data === 1) {
                 jQuery("#loadingVideo").hide();
                 jQuery(".cov").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
@@ -109,14 +112,14 @@
                     unmutevid();
                 }
             }
-            if (event.data === 2) {
+            if (e.data === 2) {
                 jQuery("#loadingVideo").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").show();
                 unmutevid();
             }
-            if (event.data === 3) {}
-            if (event.data === 0 || event.data === 5) {
+            if (e.data === 3) {}
+            if (e.data === 0 || e.data === 5) {
                 jQuery("#loadingVideo").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
@@ -125,18 +128,15 @@
         }
         jQuery(".cov").click(function () {
             player.playVideo();
-            jQuery("#loadingVideo").hide();
             jQuery(".cov").hide();
         });
         jQuery(".covall").click(function () {
             player.pauseVideo();
-            jQuery("#loadingVideo").hide();
             jQuery("#cfs").hide();
             jQuery(".cov").show();
         });
         jQuery("#cfs").click(function () {
             unmutevid();
-            jQuery("#loadingVideo").hide();
             jQuery("#cfs").hide();
         });
     </script>
