@@ -84,7 +84,7 @@
             player.playVideo();
         }
 
-        function onPlayerError(e) {
+        function onPlayerError(event) {
             player.stopVideo();
             jQuery(".cov").css("background-image", "url('video-cover.png')");
             jQuery(".cov").show();
@@ -92,8 +92,8 @@
             jQuery("#cfs").hide();
         }
 
-        function onPlayerStateChange(e) {
-            if (e.data === -1) {
+        function onPlayerStateChange(event) {
+            if (event.data === -1) {
                 if (c > 1) {
                     setTimeout(function () {
                         if (player.getPlayerState() === -1) {
@@ -102,7 +102,7 @@
                     }, 3500);
                 }
             }
-            if (e.data === 1) {
+            if (event.data === 1) {
                 jQuery("#loadingVideo").hide();
                 jQuery(".cov").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
@@ -113,14 +113,14 @@
                     unmutevid();
                 }
             }
-            if (e.data === 2) {
+            if (event.data === 2) {
                 jQuery("#loadingVideo").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").show();
                 unmutevid();
             }
-            if (e.data === 3) {}
-            if (e.data === 0 || e.data === 5) {
+            if (event.data === 3) {}
+            if (event.data === 0 || event.data === 5) {
                 jQuery("#loadingVideo").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
