@@ -111,7 +111,6 @@
             }
             if (event.data === 2) {
                 jQuery("#loadingVideo").hide();
-                jQuery(".cov").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").show();
                 unmutevid();
@@ -119,7 +118,6 @@
             if (event.data === 3) {}
             if (event.data === 0 || event.data === 5) {
                 jQuery("#loadingVideo").hide();
-                jQuery(".cov").hide();
                 jQuery("#cfs").hide();
                 jQuery(".cov").css("background-image", "url('video-cover.png')");
                 jQuery(".cov").show();
@@ -127,6 +125,7 @@
         }
         jQuery(".cov").click(function () {
             player.playVideo();
+            jQuery("#loadingVideo").hide();
             jQuery(".cov").hide();
         });
         jQuery(".covall").click(function () {
@@ -137,6 +136,7 @@
         });
         jQuery("#cfs").click(function () {
             unmutevid();
+            jQuery("#loadingVideo").hide();
             jQuery("#cfs").hide();
         });
     </script>
